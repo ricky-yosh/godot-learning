@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://c1dyv2xdy0iy5"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_1j2el"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_axdbb"]
+
+[node name="Pair of Meshes" type="Node3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.425, 0, 0, 0, 1.425, 0, 0, 0, 1.425, -2.5078, 0.901082, -1.75729)
+mesh = SubResource("CapsuleMesh_1j2el")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.425, 0, 0, 0, 1.425, 0, 0, 0, 1.425, 2.03161, -0.0690729, -1.75729)
+mesh = SubResource("BoxMesh_axdbb")
+skeleton = NodePath("../MeshInstance3D")
